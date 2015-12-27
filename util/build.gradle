@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/pinyin4j-2.5.0.jar')
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'util'
+
+    publishGroup = 'appcoo'
+    publishedGroupId = 'appcoo.util'
+    libraryName = 'Util'
+    artifact = 'util'
+
+    libraryDescription = 'util'
+
+    siteUrl = 'https://github.com/tjianli/util-android'
+    gitUrl = 'https://github.com/tjianli/util-android.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'tjianli'
+    developerName = 'taojianli'
+    developerEmail = 'tjianli@126.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+//apply from: 'https://raw.githubusercontent.com/tjianli/util-android/master/Appcoo/bintrayv1.gradle'
