@@ -49,4 +49,4 @@ ext {
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
-apply from: 'https://raw.githubusercontent.com/tjianli/appcooutil-android/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/tjianli/util-android/master/Appcoo/bintrayv1.gradle'
