@@ -29,6 +29,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'util'
 
+    publishGroup = 'appcoo'
     publishedGroupId = 'appcoo.util'
     libraryName = 'Util'
     artifact = 'util'
