@@ -32,7 +32,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = bintrayRepo
-        group = publishedGroupId
+        group = 'appcoo'
         name = bintrayName
         desc = libraryDescription
         websiteUrl = siteUrl
