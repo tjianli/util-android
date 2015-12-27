@@ -22,20 +22,21 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/pinyin4j-2.5.0.jar')
 }
 
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'util'
 
-    publishedGroupId = 'com.inthecheesefactory.thecheeselibrary'
+    publishedGroupId = 'appcoo.util'
     libraryName = 'Util'
     artifact = 'util'
 
     libraryDescription = 'util'
 
-    siteUrl = 'https://github.com/nuuneoi/FBLikeAndroid'
-    gitUrl = 'https://github.com/nuuneoi/FBLikeAndroid.git'
+    siteUrl = 'https://github.com/tjianli/util-android'
+    gitUrl = 'https://github.com/tjianli/util-android.git'
 
     libraryVersion = '0.0.1'
 
@@ -48,4 +49,4 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/tjianli/util-android/master/Appcoo/bintrayv1.gradle'
