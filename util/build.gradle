@@ -50,4 +50,4 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-//apply from: 'https://raw.githubusercontent.com/tjianli/util-android/master/Appcoo/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/tjianli/util-android/master/bintrayupload.gradle'
