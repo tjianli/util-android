@@ -39,7 +39,7 @@ ext {
     siteUrl = 'https://github.com/tjianli/util-android'
     gitUrl = 'https://github.com/tjianli/util-android.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'tjianli'
     developerName = 'taojianli'
