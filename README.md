@@ -1,8 +1,4 @@
 # util-android
-dependencies {
-    compile 'appcoo:util:0.0.1'
-}
-
 maven{
             url "https://jitpack.io"
         }
