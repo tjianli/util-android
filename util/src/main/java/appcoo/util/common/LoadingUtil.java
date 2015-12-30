@@ -34,4 +34,7 @@ public class LoadingUtil {
         progressDialog.setCancelable(true);
         progressDialog.setOnCancelListener(listener);
     }
+    public static void test(){
+        
+    }
 }
