@@ -48,6 +48,7 @@ public class ImageUtil {
         String timeStamp = format.format(new Date());
         String imageFileName = "tmp_" + timeStamp + ".jpg";
 
+        
         File image = new File(ImageUtil.getAlbumDir(), imageFileName);
         return image;
     }
