@@ -16,6 +16,7 @@ public class LoadingUtil {
 
         progressDialog = new XProgressDialog(contex, msg, XProgressDialog.THEME_HORIZONTAL_SPOT);;
         progressDialog.setCancelable(false);
+        progressDialog.show();
     }
 
     public static XProgressDialog getProgressDialog(){
