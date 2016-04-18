@@ -4,19 +4,21 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
+import com.apkfuns.xprogressdialog.XProgressDialog;
+
 /**
  * Created by tjianli on 15/8/11.
  */
 public class LoadingUtil {
 
-    private static ProgressDialog progressDialog;
+    private static XProgressDialog progressDialog;
     public static void show(Context contex,String msg){
 
-        progressDialog = ProgressDialog.show(contex, "", msg, true);
+        progressDialog = new XProgressDialog(contex, msg, XProgressDialog.THEME_HORIZONTAL_SPOT);;
         progressDialog.setCancelable(false);
     }
 
-    public static ProgressDialog getProgressDialog(){
+    public static XProgressDialog getProgressDialog(){
         return progressDialog;
     }
 
